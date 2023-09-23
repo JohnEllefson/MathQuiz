@@ -145,12 +145,11 @@ namespace MathQuiz
                 int lengthOfAnswer = answerBox.Value.ToString().Length;
                 answerBox.Select(0, lengthOfAnswer);
             }
-
         }
 
         private void correct_Answer(object sender, EventArgs e)
         {
-            SoundPlayer correctAnswerSound = new SoundPlayer(@"C:\Users\johne\OneDrive\Desktop\College Files\Fall 2023\CSE 325 - .Net\Week 2\MathQuiz Assignment\MathQuiz\MathQuiz\Correct Answer.wav");
+            SoundPlayer correctAnswerSound = new SoundPlayer(@".\Correct Answer.wav");
             correctAnswerSound.Play();
         }
 
